@@ -323,7 +323,7 @@ ul{margin:0;padding:0;list-style:none;}
 
 /* ---------- 嵌入 App（原生导航栏已显示标题）---------- */
 /* 避免与原生导航栏标题重复；语言已由 App 下发，隐藏选择器；收紧顶部间距 */
-html.embed .doc{padding-top:12px;padding-bottom:56px;}
+html.embed .doc{padding-top:12px;padding-bottom:32px;}
 html.embed .doc__title{display:none;}
 html.embed .doc__langwrap{display:none;}
 html.embed .doc__meta{margin-top:0;}
