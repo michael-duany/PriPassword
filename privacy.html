@@ -12,9 +12,25 @@
 document.documentElement.className += ' js';
 try{
   var _p = new URLSearchParams(location.search);
-  if(_p.get('embed') === '1' || _p.get('embed') === 'true'){ document.documentElement.classList.add('embed'); }
+  var _codes = ['zh-CN','zh-TW','en','ja','de','fr','ko','es','pt','it'];
+  // 主题：?theme 优先，否则跟随系统深浅（公开网页）；同步更新主题色，避免首次渲染闪烁
   var _t = _p.get('theme');
-  if(_t === 'dark' || _t === 'light'){ document.documentElement.setAttribute('data-theme', _t); }
+  if(_t !== 'dark' && _t !== 'light'){
+    _t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  }
+  document.documentElement.setAttribute('data-theme', _t);
+  var _meta = document.querySelector('meta[name="theme-color"]');
+  if(_meta){ _meta.setAttribute('content', _t === 'dark' ? '#000000' : '#ffffff'); }
+  // 嵌入模式：仅由 App 通过 ?embed 控制
+  if(_p.get('embed') === '1' || _p.get('embed') === 'true'){ document.documentElement.classList.add('embed'); }
+  // 语言：?lang 优先 → 本地存储记忆 → 英文；必须在 <head> 同步设置 data-lang，
+  // 否则首屏会先渲染默认英文块，待 DOMContentLoaded 的 init() 才切换（FOUC）
+  var _lang = _p.get('lang');
+  if(_codes.indexOf(_lang) < 0){
+    try { _lang = localStorage.getItem('pp_doc_lang'); } catch(e){ _lang = null; }
+    if(_codes.indexOf(_lang) < 0){ _lang = 'en'; }
+  }
+  document.documentElement.setAttribute('data-lang', _lang);
 }catch(e){}
 </script>
 </head>
@@ -692,11 +708,12 @@ try{
     var bs = blocks(), found = false, first = null;
     bs.forEach(function(b){
       if(!first) first = b;
-      var on = b.getAttribute('data-lang') === lang;
-      b.hidden = !on;
-      if(on) found = true;
+      if(b.getAttribute('data-lang') === lang) found = true;
     });
-    if(!found && first){ first.hidden = false; lang = (first.getAttribute('data-lang') || 'zh-CN'); }
+    // 未命中则回退到首个语种（简体中文）
+    if(!found && first){ lang = (first.getAttribute('data-lang') || 'zh-CN'); }
+    // 由 CSS 依据 <html data-lang> 控制可见性，避免闪烁
+    document.documentElement.setAttribute('data-lang', lang);
     document.documentElement.lang = lang;
     try { localStorage.setItem('pp_doc_lang', lang); } catch(e){}
     var meta = LANGS.filter(function(l){ return l.code === lang; })[0];

@@ -281,6 +281,21 @@ ul{margin:0;padding:0;list-style:none;}
 .doc__langwrap{display:flex;justify-content:flex-end;margin:-4px 0 10px;}
 .doc__lang{font:inherit;font-size:14px;color:var(--ink);background:rgba(120,120,128,.12);border:1px solid var(--line);border-radius:980px;padding:8px 32px 8px 14px;-webkit-appearance:none;appearance:none;cursor:pointer;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 16px) 54%,calc(100% - 11px) 54%;background-size:5px 5px,5px 5px;background-repeat:no-repeat;}
 .doc__lang:focus{outline:none;border-color:var(--ink-3);}
+
+/* ---------- 语言可见性：首屏即按 <html data-lang> 显示对应语种，杜绝先英文后切换的闪烁 ---------- */
+.lang-block{display:none;}
+/* 无 JS 时的兜底：默认显示英文（原默认可见块） */
+html:not([data-lang]) .lang-block[data-lang="en"]{display:block;}
+html[data-lang="zh-CN"] .lang-block[data-lang="zh-CN"],
+html[data-lang="zh-TW"] .lang-block[data-lang="zh-TW"],
+html[data-lang="en"] .lang-block[data-lang="en"],
+html[data-lang="ja"] .lang-block[data-lang="ja"],
+html[data-lang="de"] .lang-block[data-lang="de"],
+html[data-lang="fr"] .lang-block[data-lang="fr"],
+html[data-lang="ko"] .lang-block[data-lang="ko"],
+html[data-lang="es"] .lang-block[data-lang="es"],
+html[data-lang="pt"] .lang-block[data-lang="pt"],
+html[data-lang="it"] .lang-block[data-lang="it"]{display:block;}
 .footnote sup{font-size:.72em;}
 
 /* ---------- 入场动画（仅在 JS 可用时启用，避免无脚本时内容不可见） ---------- */
