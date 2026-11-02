@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#000000">
+<title>Privacy Policy — PriPassword</title>
+<meta name="description" content="PriPassword 隐私政策：您的密码只存在您自己的设备上。我们没有自己的服务器，不收集、不分析您的保险库数据；仅在 App 内购买环节与 Apple 通信。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234aa3ff'/%3E%3Cstop offset='1' stop-color='%230071e3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='15' fill='url(%23g)'/%3E%3Cpath d='M32 13c-6.6 0-11 4.6-11 11.4V29h-1.4c-1.4 0-2.6 1.2-2.6 2.6v14.8c0 1.4 1.2 2.6 2.6 2.6h24.8c1.4 0 2.6-1.2 2.6-2.6V31.6c0-1.4-1.2-2.6-2.6-2.6H43v-4.6C43 17.6 38.6 13 32 13zm0 5.2c3.4 0 5.8 2.4 5.8 6.2V29H26.2v-4.6c0-3.8 2.4-6.2 5.8-6.2z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+
+
+
+<main class="doc">
+  <div class="doc__inner">
+    <div class="doc__langwrap"><select id="langSelect" class="doc__lang"></select></div>
+
+    <div id="docBody">
+
+<!-- ===================== 简体中文 ===================== -->
+<div class="lang-block" data-lang="zh-CN" hidden>
+  <h1 class="doc__title">隐私政策</h1>
+  <p class="doc__meta">生效日期：2026 年 11 月 1 日</p>
+
+  <p>本隐私政策说明 PriPassword（以下简称"本 App"或"我们"）如何收集、使用、存储和保护您的信息。PriPassword 是一款本地优先的密码管理器：您的密码库只保存在您自己的设备上，并以强加密保护，不会离开您的设备，也不会上传到任何服务器或云端。本 App 不会向任何外部服务传输您的密码或保险库数据；仅有的对外通信是与 Apple 的购买/订阅以及资格标记（经您的 Apple 账户），且这些通信均不包含您的保险库数据。</p>
+
+  <h2>1. 我们是否收集您的个人数据</h2>
+  <p>我们尽可能少地处理个人数据。事实上，本 App 的<strong>保险库数据不会向任何服务器传输或存储——它们仅留存在您的设备</strong>；而购买与资格状态由 Apple 在您的账户内处理（不含任何保险库数据），我们均不收集。下表说明我们与您相关数据的关系：</p>
+  <table>
+    <thead>
+      <tr><th>数据类型</th><th>说明</th><th>是否由我们收集/存储</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>保险库数据（密码、备注、两步验证密钥等）</td><td>仅存储在您的设备本地，由您掌控</td><td>否——仅留存于您的设备，我们无权读取、不上传</td></tr>
+      <tr><td>资格标记（经您的 Apple 账户）</td><td>用于在本 App 内统一管理"首次同步免费"的资格；不含任何密码或账户信息，仅用于标识该资格状态</td><td>否——由 Apple 在您自己的设备间同步</td></tr>
+      <tr><td>App 内购买与订阅记录</td><td>由 Apple 处理；我们仅接收"是否已付费/订阅"的结果</td><td>否——我们仅获得结果，不获取您的支付信息</td></tr>
+    </tbody>
+  </table>
+  <p>我们也绝不访问您的通讯录、照片或位置等敏感信息，更不集成任何第三方分析、广告或崩溃上报 SDK，也不会上传任何诊断或使用数据（包括崩溃日志）。本 App 使用的系统框架（如用于本地通知提醒）均在设备本地处理。邮件反馈由您主动撰写、经您自己的邮件账户发送，App 不会从中读取或上传您的保险库数据。</p>
+
+  <h2>2. 我们如何使用这些信息</h2>
+  <ul>
+    <li>在您的设备上<strong>本地加密、存储并展示</strong>您的保险库数据；</li>
+    <li>在您<strong>主动发起</strong>时，通过设备之间的直接传输在您的设备间同步数据（用途与权限见第 3 节）；</li>
+    <li>通过 Apple 完成购买与订阅，并向您提供已购功能。</li>
+  </ul>
+
+  <h2>3. 权限、数据共享与第三方</h2>
+  <p>本 App 会请求以下系统权限，且均仅在功能需要时、用于以下明确目的：</p>
+  <ul>
+    <li><strong>蓝牙</strong>：用于在您的设备之间进行直接传输以同步数据。同步由您手动发起，仅在同步进行期间活动，没有后台常驻进程，也没有常开的连接；传输采用端到端加密，每次同步的密钥临时生成，不经任何第三方服务器或云端中转。</li>
+    <li><strong>相机</strong>：仅用于在您添加两步验证（TOTP）时扫描二维码。相机仅在扫描时启用，不拍照、不保存至相册。</li>
+    <li><strong>Face ID / Touch ID</strong>：用于解锁 App 与保险库，亦支持设备密码（由系统验证）；App 退至后台或闲置时会自动锁定，锁定期间数据无法读取。验证由系统完成，App 不保存任何用于解锁的凭据（生物识别与设备密码均由系统保管）。</li>
+  </ul>
+  <p><strong>我们不向任何第三方共享您的个人数据，也不进行任何跨 App 或跨网站的用户追踪。</strong> 本 App 不集成任何第三方 SDK（无广告、无分析、无社交分享、无任何用于追踪的第三方 SDK 或标识符）。除与 Apple 的必要通信（App 内购买/订阅经 Apple，资格标记经您的 Apple 账户）外，本 App 不与任何第三方服务交换数据。</p>
+
+  <h2>4. 数据安全</h2>
+  <ul>
+    <li>所有保险库数据在您的设备本地以<strong>强加密</strong>方式存储；</li>
+    <li>用于解锁的密钥由<strong>设备安全硬件保护</strong>，仅保存在您的设备上，不离开您的设备；</li>
+    <li>数据文件被明确标记为<strong>不参与 iCloud 或 iTunes 备份</strong>；</li>
+    <li>复制密码后，剪贴板会在约 <strong>60 秒</strong>后自动清除；</li>
+    <li>导出数据为 CSV（含两步验证密钥）明文文件前需<strong>生物识别确认</strong>——明文文件任何人可读，请妥善保管、用后删除；</li>
+    <li>由于数据从不离开您的设备，卸载 App 或从 App 内彻底删除即永久删除，我们没有任何副本。</li>
+  </ul>
+
+  <h2>5. 数据保留</h2>
+  <p>您在设备上的保险库数据会保留至您在 App 内删除数据或卸载 App。我们不在任何服务器上保留保险库数据。与订阅/试用资格相关的资格标记仅用于记录该 Apple 账户是否已使用过"首次同步免费"，不含任何保险库数据，并随该 Apple 账户存储。购买记录由 Apple 按其隐私政策保留。</p>
+
+  <h2>6. 您的隐私权利与数据控制</h2>
+  <p>您的保险库数据完全保存在您自己的设备上、由您掌控，因此您对自己的数据拥有直接控制权：您可以随时在 App 内<strong>导出或彻底删除</strong>全部保险库数据，无需向我们申请。与订阅和购买相关的记录由 Apple 持有，如需处理请向 Apple（通过您的 Apple 账户）申请。</p>
+
+  <h2>7. 儿童隐私</h2>
+  <p>PriPassword 可供所有年龄的用户使用，我们也不会有意收集 13 岁以下儿童的任何个人信息。如果您认为我们误收集了儿童的信息，请通过下方联系方式告知，我们会尽快删除。</p>
+
+  <h2>8. 政策变更</h2>
+  <p>如本政策更新，我们会在此页面公布并注明生效日期。但我们的核心承诺不会改变：<strong>您的保险库数据属于您，且只属于您。</strong></p>
+
+  <h2>9. 联系方式</h2>
+  <p>如对隐私有任何疑问，请通过邮箱 <a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a> 联系我们，或前往支持页面。</p>
+
+</div>
+
+<!-- ===================== 繁體中文 ===================== -->
+<div class="lang-block" data-lang="zh-TW" hidden>
+  <h1 class="doc__title">隱私權政策</h1>
+  <p class="doc__meta">生效日期：2026 年 11 月 1 日</p>
+
+  <p>本隱私權政策說明 PriPassword（以下簡稱「本 App」或「我們」）如何收集、使用、儲存和保護您的資訊。PriPassword 是一款本地優先的密碼管理器：您的密碼庫只保存在您自己的裝置上，並以強加密保護，不會離開您的裝置，也不會上傳到任何伺服器或雲端。本 App 不會向任何外部服務傳輸您的密碼或保險庫資料；僅有的對外通訊是與 Apple 的購買/訂閱以及資格標記（經您的 Apple 帳戶），且這些通訊均不包含您的保險庫資料。</p>
+
+  <h2>1. 我們是否收集您的個人資料</h2>
+  <p>我們盡可能少地處理個人資料。事實上，本 App 的<strong>保險庫資料不會向任何伺服器傳輸或儲存——它們僅留存於您的裝置</strong>；而購買與資格狀態由 Apple 在您的帳戶內處理（不含任何保險庫資料），我們均不收集。下表說明我們與您相關資料的關係：</p>
+  <table>
+    <thead>
+      <tr><th>資料類型</th><th>說明</th><th>是否由我們收集/儲存</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>保險庫資料（密碼、備註、兩步驗證金鑰等）</td><td>僅儲存在您的裝置本地，由您掌控</td><td>否——僅留存於您的裝置，我們無權讀取、不上傳</td></tr>
+      <tr><td>資格標記（經您的 Apple 帳戶）</td><td>用於在本 App 內統一管理「首次同步免費」的資格；不含任何密碼或帳戶資訊，僅用於標識該資格狀態</td><td>否——由 Apple 在您自己的裝置間同步</td></tr>
+      <tr><td>App 內購買與訂閱記錄</td><td>由 Apple 處理；我們僅接收「是否已付費/訂閱」的結果</td><td>否——我們僅獲得結果，不獲取您的付款資訊</td></tr>
+    </tbody>
+  </table>
+  <p>我們也絕不存取您的通訊錄、照片或位置等敏感資訊，更不整合任何第三方分析、廣告或崩潰回報 SDK，也不會上傳任何診斷或使用資料（包括崩潰日誌）。本 App 使用的系統框架（如用於本地通知提醒）均在裝置本地處理。郵件回饋由您主動撰寫、經您自己的郵件帳戶發送，App 不會從中讀取或上傳您的保險庫資料。</p>
+
+  <h2>2. 我們如何使用這些資訊</h2>
+  <ul>
+    <li>在您的裝置上<strong>本地加密、儲存並展示</strong>您的保險庫資料；</li>
+    <li>在您<strong>主動發起</strong>時，透過裝置之間的直接傳輸在您的裝置間同步資料（用途與權限見第 3 節）；</li>
+    <li>透過 Apple 完成購買與訂閱，並向您提供已購功能。</li>
+  </ul>
+
+  <h2>3. 權限、資料共享與第三方</h2>
+  <p>本 App 會請求以下系統權限，且均僅在功能需要時、用於以下明確目的：</p>
+  <ul>
+    <li><strong>藍牙</strong>：用於在您的裝置之間進行直接傳輸以同步資料。同步由您手動發起，僅在同步進行期間活動，沒有背景常駐程序，也沒有常開的連線；傳輸採用端對端加密，每次同步的金鑰臨時生成，不經任何第三方伺服器或雲端中轉。</li>
+    <li><strong>相機</strong>：僅用於在您新增兩步驗證（TOTP）時掃描 QR Code。相機僅在掃描時啟用，不拍照、不儲存至相簿。</li>
+    <li><strong>Face ID / Touch ID</strong>：用於解鎖 App 與保險庫，亦支援裝置密碼（由系統驗證）；App 退至背景或閒置時會自動鎖定，鎖定期間資料無法讀取。驗證由系統完成，App 不儲存任何用於解鎖的憑證（生物辨識與裝置密碼均由系統保管）。</li>
+  </ul>
+  <p><strong>我們不向任何第三方共享您的個人資料，也不進行任何跨 App 或跨網站的使用者追蹤。</strong> 本 App 不整合任何第三方 SDK（無廣告、無分析、無社交分享、無任何用於追蹤的第三方 SDK 或識別碼）。除與 Apple 的必要通訊（App 內購買/訂閱經 Apple，資格標記經您的 Apple 帳戶）外，本 App 不與任何第三方服務交換資料。</p>
+
+  <h2>4. 資料安全</h2>
+  <ul>
+    <li>所有保險庫資料在您的裝置本地以<strong>強加密</strong>方式儲存；</li>
+    <li>用於解鎖的金鑰由<strong>裝置安全硬體保護</strong>，僅儲存在您的裝置上，不離開您的裝置；</li>
+    <li>資料檔案明確標記為<strong>不參與 iCloud 或 iTunes 備份</strong>；</li>
+    <li>複製密碼後，剪貼簿會在約 <strong>60 秒</strong>後自動清除；</li>
+    <li>匯出資料為 CSV（含兩步驗證金鑰）明文字檔前需<strong>生物辨識確認</strong>——明文字檔任何人可讀，請妥善保管、用後刪除；</li>
+    <li>由於資料從不離開您的裝置，解除安裝 App 或從 App 內徹底刪除即永久刪除，我們沒有任何副本。</li>
+  </ul>
+
+  <h2>5. 資料保留</h2>
+  <p>您在裝置上的保險庫資料會保留至您在 App 內刪除資料或解除安裝 App。我們不在任何伺服器上保留保險庫資料。與訂閱/試用資格相關的資格標記僅用於記錄該 Apple 帳戶是否已使用過「首次同步免費」，不含任何保險庫資料，並隨該 Apple 帳戶儲存。購買記錄由 Apple 按其隱私政策保留。</p>
+
+  <h2>6. 您的隱私權利與資料控制</h2>
+  <p>您的保險庫資料完全儲存在您自己的裝置上、由您掌控，因此您對自己的資料擁有直接控制權：您可以隨時在 App 內<strong>匯出或徹底刪除</strong>全部保險庫資料，無需向我們申請。與訂閱和購買相關的記錄由 Apple 持有，如需處理請向 Apple（透過您的 Apple 帳戶）申請。</p>
+
+  <h2>7. 兒童隱私</h2>
+  <p>PriPassword 可供所有年齡的使用者使用，我們也不會有意收集 13 歲以下兒童的任何個人資訊。如果您認為我們誤收集了兒童的資訊，請透過下方聯絡方式告知，我們會盡快刪除。</p>
+
+  <h2>8. 政策變更</h2>
+  <p>如本政策更新，我們會在此頁面公布並註明生效日期。但我們的核心承諾不會改變：<strong>您的保險庫資料屬於您，且只屬於您。</strong></p>
+
+  <h2>9. 聯絡方式</h2>
+  <p>如對隱私有任何疑問，請透過電子郵件 <a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a> 與我們聯絡，或前往支援頁面。</p>
+
+</div>
+
+<!-- ===================== English ===================== -->
+<div class="lang-block" data-lang="en">
+  <h1 class="doc__title">Privacy Policy</h1>
+  <p class="doc__meta">Effective date: November 1, 2026</p>
+
+  <p>This privacy policy explains how PriPassword (referred to in this document as "the App" or "we") collects, uses, stores, and protects your information. PriPassword is a local-first password manager: your password vault lives only on your own devices and is protected with strong encryption. It never leaves your device and is never uploaded to any server or cloud. The App does not transmit your passwords or vault data to any external service; the only outbound communication is with Apple for purchases/subscriptions and for the eligibility marker (tied to your Apple Account), and none of that communication contains your vault data.</p>
+
+  <h2>1. Do We Collect Your Personal Data?</h2>
+  <p>We process as little personal data as possible. In fact, the App's <strong>vault data is never transmitted to or stored on any server—it stays only on your device</strong>; your purchase and eligibility status are handled by Apple under your Apple Account (and contain no vault data), and we collect neither. The table below shows how we relate to the data associated with you:</p>
+  <table>
+    <thead>
+      <tr><th>Data type</th><th>Description</th><th>Collected/stored by us?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Vault data (passwords, notes, 2FA keys, etc.)</td><td>Stored only locally on your device and under your control</td><td>No—kept only on your device; we cannot read it and do not upload it</td></tr>
+      <tr><td>Eligibility marker (tied to your Apple Account)</td><td>Used within the App to centrally manage your "free first sync" eligibility; contains no passwords or account information and only identifies that eligibility status</td><td>No—synced by Apple across your own devices</td></tr>
+      <tr><td>In-App Purchase and subscription records</td><td>Handled by Apple; we only receive the result of whether payment/subscription is active</td><td>No—we only receive the result and never obtain your payment information</td></tr>
+    </tbody>
+  </table>
+  <p>We also never access sensitive information such as your contacts, photos, or location, and we do not integrate any third-party analytics, advertising, or crash-reporting SDKs, nor do we upload any diagnostic or usage data (including crash logs). The system frameworks the App uses (such as for local notifications) are all processed on-device. Email feedback is composed by you and sent through your own email account; the App does not read from it or upload your vault data.</p>
+
+  <h2>2. How We Use This Information</h2>
+  <ul>
+    <li><strong>Locally encrypt, store, and display</strong> your vault data on your device;</li>
+    <li><strong>Sync data between your devices</strong> via direct device-to-device transfer, only when <strong>you initiate it</strong> (purpose and permissions are described in Section 3);</li>
+    <li><strong>Complete purchases and subscriptions through Apple</strong> and provide you with the features you've purchased.</li>
+  </ul>
+
+  <h2>3. Permissions, Data Sharing, and Third Parties</h2>
+  <p>The App requests the following system permissions, and only when needed for a feature and for the clear purposes below:</p>
+  <ul>
+    <li><strong>Bluetooth</strong>: Used for direct device-to-device transfer to sync data. Sync is initiated manually by you, is active only during a sync session, and there is no background process that stays resident nor any persistent connection; transfers use end-to-end encryption, with a fresh key generated for each sync, and never pass through any third-party server or cloud.</li>
+    <li><strong>Camera</strong>: Used only to scan QR codes when you add two-factor authentication (TOTP). The camera is enabled only while scanning; it does not take photos or save anything to your photo library.</li>
+    <li><strong>Face ID / Touch ID</strong>: Used to unlock the App and your vault, and also supports the device passcode (verified by the system). The App auto-locks when sent to the background or left idle, and data cannot be read while locked. Verification is performed by the system; the App does not store any unlock credentials (biometrics and the device passcode are both held by the system).</li>
+  </ul>
+  <p><strong>We do not share your personal data with any third party, nor do we engage in any cross-app or cross-site user tracking.</strong> The App integrates no third-party SDKs (no ads, no analytics, no social sharing, and no third-party SDKs or identifiers used for tracking). Apart from the necessary communication with Apple (in-app purchases/subscriptions via Apple, and the eligibility marker tied to your Apple Account), the App exchanges data with no third-party service.</p>
+
+  <h2>4. Data Security</h2>
+  <ul>
+    <li>All vault data is stored locally on your device with <strong>strong encryption</strong>;</li>
+    <li>The key used for unlocking is protected by <strong>device security hardware</strong> and kept only on your device; it never leaves your device;</li>
+    <li>Data files are explicitly marked to <strong>be excluded from iCloud or iTunes backups</strong>;</li>
+    <li>After you copy a password, the clipboard is <strong>automatically cleared after about 60 seconds</strong>;</li>
+    <li>Exporting your data to a plain-text CSV file (which includes 2FA keys) requires <strong>biometric confirmation</strong>—a plain-text file is readable by anyone, so please keep it safe and delete it when done;</li>
+    <li>Because your data never leaves your device, uninstalling the App or deleting it entirely from within the App permanently deletes it; we hold no copy.</li>
+  </ul>
+
+  <h2>5. Data Retention</h2>
+  <p>Your vault data on your device is retained until you delete it within the App or uninstall the App. We retain no vault data on any server. The eligibility marker related to your subscription or trial eligibility is used only to record whether that Apple Account has used its "free first sync," contains no vault data, and is stored with that Apple Account. Purchase records are retained by Apple under its own privacy policy.</p>
+
+  <h2>6. Your Privacy Rights and Data Control</h2>
+  <p>Your vault data is stored entirely on your own device and under your control, so you have direct control over your data: you can <strong>export or permanently delete</strong> all of your vault data from within the App at any time, with no need to request it from us. Records related to subscriptions and purchases are held by Apple; to manage them, please contact Apple (through your Apple Account).</p>
+
+  <h2>7. Children's Privacy</h2>
+  <p>PriPassword is available to users of all ages, and we do not knowingly collect any personal information from children under 13. If you believe we have inadvertently collected a child's information, please let us know using the contact details below and we will delete it as soon as possible.</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>If this policy is updated, we will post it on this page and note the effective date. But our core commitment will not change: <strong>your vault data belongs to you, and only to you.</strong></p>
+
+  <h2>9. Contact Us</h2>
+  <p>If you have any questions about privacy, please contact us at <a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a>, or visit our support page.</p>
+
+</div>
+
+<!-- ===================== 日本語 ===================== -->
+<div class="lang-block" data-lang="ja" hidden>
+  <h1 class="doc__title">プライバシーポリシー</h1>
+  <p class="doc__meta">効力発生日：2026年11月1日</p>
+
+  <p>本プライバシーポリシーは、PriPassword（本アプリ、または「当社」）がお客様の情報をどのように収集、利用、保存、保護するかを説明するものです。PriPassword はローカルファーストのパスワードマネージャーです。お客様のパスワード保管庫はお客様ご自身のデバイスのみに保存され、強力な暗号化で保護されています。それはデバイスから離れることも、いかなるサーバーやクラウドにもアップロードされることもありません。本アプリは、お客様のパスワードや保管庫データをいかなる外部サービスにも送信しません。Apple との購入／サブスクリプションおよび資格マーカー（お客様の Apple アカウント経由）に関する通信のみが外部と行われますが、これらの通信に保管庫データは含まれません。</p>
+
+  <h2>1. お客様の個人データを収集しますか</h2>
+  <p>当社は個人データの処理を最小限に抑えています。実際、本アプリの<strong>保管庫データはいかなるサーバーにも送信・保存されず、お客様のデバイスにのみ留まります</strong>。購入および資格の状態はお客様の Apple アカウントのもとで Apple によって処理され（保管庫データは含まれません）、当社はいずれも収集しません。当社とお客様に関連するデータの関係を以下の表に示します。</p>
+  <table>
+    <thead>
+      <tr><th>データの種類</th><th>説明</th><th>当社が収集／保存するか</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>保管庫データ（パスワード、メモ、2FA キーなど）</td><td>お客様のデバイス本体にのみ保存され、お客様が管理</td><td>いいえ——お客様のデバイスにのみ留まり、当社は読み取れず、アップロードもしません</td></tr>
+      <tr><td>資格マーカー（お客様の Apple アカウント経由）</td><td>本アプリ内で「初回同期無料」の資格を一元管理するために使用。パスワードやアカウント情報は含まず、その資格状態の識別のみに使用</td><td>いいえ——Apple がお客様ご自身のデバイス間で同期</td></tr>
+      <tr><td>アプリ内購入およびサブスクリプション記録</td><td>Apple が処理。当社は「支払い済み／購読中か」の結果のみを受け取る</td><td>いいえ——当社は結果のみを受け取り、お客様の支払い情報を取得しません</td></tr>
+    </tbody>
+  </table>
+  <p>また、当社は連絡先、写真、位置情報などの機微情報には一切アクセスせず、第三者の分析、広告、クラッシュレポート SDK を一切統合せず、いかなる診断・利用データ（クラッシュログを含む）もアップロードしません。本アプリが使用するシステムフレームワーク（ローカル通知の提醒など）はすべてデバイス上で処理されます。メールによるフィードバックはお客様が作成し、お客様ご自身のメールアカウントから送信されるものであり、アプリがそれを読み取ったり保管庫データをアップロードしたりすることはありません。</p>
+
+  <h2>2. これらの情報の利用目的</h2>
+  <ul>
+    <li>お客様のデバイス上で保管庫データを<strong>ローカルに暗号化し、保存し、表示する</strong>；</li>
+    <li>お客様が<strong>自ら開始した</strong>ときに、デバイス間の直接転送によりデータを同期する（目的と権限は第 3 節参照）；</li>
+    <li>Apple を通じて購入およびサブスクリプションを完了し、購入済みの機能を提供する。</li>
+  </ul>
+
+  <h2>3. 権限、データ共有、および第三者</h2>
+  <p>本アプリは以下のシステム権限を要求しますが、いずれも機能が必要とする場合に限り、以下の明確な目的のためです：</p>
+  <ul>
+    <li><strong>Bluetooth（ブルートゥース）</strong>：デバイス間で直接転送し、データを同期するために使用。同期はお客様が手動で開始し、同期セッション中のみ稼働し、バックグラウンドで常駐するプロセスや常時接続はありません。転送はエンドツーエンド暗号化を使用し、同期ごとに一時的な鍵を生成し、いかなる第三者サーバーやクラウドを経由しません。</li>
+    <li><strong>カメラ</strong>：二段階認証（TOTP）を追加するときに QR コードをスキャンするためのみに使用。カメラはスキャン中のみ有効で、写真を撮影したりフォトライブラリに保存したりしません。</li>
+    <li><strong>Face ID / Touch ID</strong>：アプリと保管庫のロック解除に使用し、デバイスパスコード（システムが検証）もサポート。アプリがバックグラウンドに移るか放置されると自動的にロックし、ロック中はデータを読み取れません。検証はシステムによって行われ、アプリはロック解除用の資格情報（生体認証とデバイスパスコードはいずれもシステムが管理）を保存しません。</li>
+  </ul>
+  <p><strong>当社はお客様の個人データをいかなる第三者とも共有せず、いかなるアプリ間・サイト間のユーザー追跡も行いません。</strong> 本アプリはいかなる第三者 SDK（広告、分析、ソーシャル共有、および追跡に用いられるいかなる第三者 SDK や識別子）も統合しません。Apple との必要な通信（Apple 経由のアプリ内購入／サブスクリプション、およびお客様の Apple アカウント経由の資格マーカー）を除き、本アプリはいかなる第三者サービスともデータを交換しません。</p>
+
+  <h2>4. データセキュリティ</h2>
+  <ul>
+    <li>すべての保管庫データは、お客様のデバイス本体に<strong>強力な暗号化</strong>で保存される；</li>
+    <li>ロック解除に用いる鍵は<strong>デバイスのセキュリティハードウェア</strong>によって保護され、お客様のデバイスにのみ保存され、デバイス外に出ない；</li>
+    <li>データファイルは<strong>iCloud または iTunes のバックアップ対象から明示的に除外</strong>されている；</li>
+    <li>パスワードをコピーした後、クリップボードは約 <strong>60 秒</strong>後に自動でクリアされる；</li>
+    <li>2FA キーを含むデータを平文の CSV ファイルにエクスポートする前には<strong>生体認証による確認</strong>が必要——平文ファイルは誰でも読めるため、安全に保管し、使い終わったら削除してください；</li>
+    <li>データはデバイス外に出ないため、アプリのアンインストールやアプリ内からの完全削除は永久削除であり、当社にコピーはない。</li>
+  </ul>
+
+  <h2>5. データの保持</h2>
+  <p>デバイス上の保管庫データは、お客様がアプリ内で削除するか、アプリをアンインストールするまで保持されます。当社はいかなるサーバーにも保管庫データを保持しません。サブスクリプションまたは試用資格に関連する資格マーカーは、その Apple アカウントが「初回同期無料」を使用済みかどうかのみを記録するために用いられ、保管庫データは含まず、その Apple アカウントとともに保存されます。購入記録は Apple が自らのプライバシーポリシーに従って保持します。</p>
+
+  <h2>6. お客様のプライバシー権利とデータ管理</h2>
+  <p>お客様の保管庫データは完全にお客様ご自身のデバイスに保存され、お客様が管理するため、お客様はご自身のデータに対して直接的な管理権を有します。アプリ内でいつでも全保管庫データを<strong>エクスポートまたは完全に削除</strong>でき、当社への申請は不要です。サブスクリプションや購入に関連する記録は Apple が保持しており、取り扱いについては Apple（お客様の Apple アカウント経由）にお問い合わせください。</p>
+
+  <h2>7. 児童のプライバシー</h2>
+  <p>PriPassword はすべての年齢の方にご利用いただけ、当社は 13 歳未満の子供から意図的に個人情報を収集することはありません。子供の情報を誤って収集したと思われる場合は、以下の連絡先までお知らせいただければ、速やかに削除します。</p>
+
+  <h2>8. ポリシーの変更</h2>
+  <p>本ポリシーを更新する場合、当社はこのページで公表し、効力発生日を明記します。ただし、当社の中核となる約束は変わりません：<strong>お客様の保管庫データはお客様のものであり、お客様だけのものです。</strong></p>
+
+  <h2>9. お問い合わせ</h2>
+  <p>プライバシーに関するご質問は、<a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a> までメールでご連絡いただくか、サポートページをご覧ください。</p>
+
+</div>
+
+<!-- ===================== Deutsch ===================== -->
+<div class="lang-block" data-lang="de" hidden>
+  <h1 class="doc__title">Datenschutzrichtlinie</h1>
+  <p class="doc__meta">Gültig ab: 1. November 2026</p>
+
+  <p>Diese Datenschutzrichtlinie erklärt, wie PriPassword (in diesem Dokument „die App" oder „wir" genannt) Ihre Informationen erhebt, verwendet, speichert und schützt. PriPassword ist ein lokal ausgerichteter Passwort-Manager: Ihr Passwort-Tresor befindet sich ausschließlich auf Ihren eigenen Geräten und ist durch starke Verschlüsselung geschützt. Er verlässt Ihr Gerät nie und wird niemals auf einen Server oder in die Cloud hochgeladen. Die App überträgt Ihre Passwörter oder Tresordaten an keinen externen Dienst; die einzige ausgehende Kommunikation erfolgt mit Apple für Käufe/Abonnements und für den Berechtigungs-Marker (an Ihr Apple-Konto gebunden), und keine dieser Kommunikationen enthält Ihre Tresordaten.</p>
+
+  <h2>1. Erheben wir personenbezogene Daten von Ihnen?</h2>
+  <p>Wir verarbeiten so wenig personenbezogene Daten wie möglich. Tatsächlich werden die <strong>Tresordaten der App niemals an einen Server übertragen oder dort gespeichert — sie verbleiben ausschließlich auf Ihrem Gerät</strong>; Ihr Kauf- und Berechtigungsstatus wird von Apple unter Ihrem Apple-Konto verarbeitet (und enthält keine Tresordaten), und wir erheben keines von beiden. Die folgende Tabelle zeigt, wie wir mit den mit Ihnen verbundenen Daten umgehen:</p>
+  <table>
+    <thead>
+      <tr><th>Datentyp</th><th>Beschreibung</th><th>Von uns erhoben/gespeichert?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Tresordaten (Passwörter, Notizen, 2FA-Schlüssel usw.)</td><td>Nur lokal auf Ihrem Gerät gespeichert und unter Ihrer Kontrolle</td><td>Nein — nur auf Ihrem Gerät; wir können sie nicht lesen und laden sie nicht hoch</td></tr>
+      <tr><td>Berechtigungs-Marker (an Ihr Apple-Konto gebunden)</td><td>Innerhalb der App zur zentralen Verwaltung Ihrer „kostenlosen Erstsynchronisierung" verwendet; enthält keine Passwörter oder Kontoinformationen und identifiziert nur diesen Berechtigungsstatus</td><td>Nein — von Apple zwischen Ihren eigenen Geräten synchronisiert</td></tr>
+      <tr><td>In-App-Kauf- und Abonnement-Datensätze</td><td>Von Apple verarbeitet; wir erhalten nur das Ergebnis, ob die Zahlung/das Abonnement aktiv ist</td><td>Nein — wir erhalten nur das Ergebnis und erlangen niemals Ihre Zahlungsdaten</td></tr>
+    </tbody>
+  </table>
+  <p>Wir greifen auch niemals auf sensible Informationen wie Ihre Kontakte, Fotos oder den Standort zu und integrieren keine Analyse-, Werbe- oder Absturzberichts-SDKs von Drittanbietern, noch laden wir Diagnose- oder Nutzungsdaten (einschließlich Absturzprotokolle) hoch. Die System-Frameworks, die die App verwendet (z. B. für lokale Benachrichtigungen), werden vollständig auf dem Gerät verarbeitet. E-Mail-Feedback wird von Ihnen verfasst und über Ihr eigenes E-Mail-Konto gesendet; die App liest daraus nichts und lädt Ihre Tresordaten nicht hoch.</p>
+
+  <h2>2. Wie wir diese Informationen verwenden</h2>
+  <ul>
+    <li>Ihre Tresordaten auf Ihrem Gerät <strong>lokal verschlüsseln, speichern und anzeigen</strong>;</li>
+    <li>Daten zwischen Ihren Geräten <strong>über direkte Geräte-zu-Gerät-Übertragung synchronisieren</strong>, nur wenn <strong>Sie sie initiieren</strong> (Zweck und Berechtigungen siehe Abschnitt 3);</li>
+    <li><strong>Käufe und Abonnements über Apple abschließen</strong> und Ihnen die erworbenen Funktionen bereitstellen.</li>
+  </ul>
+
+  <h2>3. Berechtigungen, Datenaustausch und Dritte</h2>
+  <p>Die App fordert die folgenden Systemberechtigungen an, und zwar nur, wenn eine Funktion sie benötigt und für die folgenden klaren Zwecke:</p>
+  <ul>
+    <li><strong>Bluetooth</strong>: Für die direkte Geräte-zu-Gerät-Übertragung zum Synchronisieren von Daten. Die Synchronisierung wird von Ihnen manuell gestartet, ist nur während einer Synchronisierungssitzung aktiv, und es gibt keinen im Hintergrund residenten Prozess noch eine dauerhafte Verbindung; Übertragungen verwenden Ende-zu-Ende-Verschlüsselung mit einem für jede Synchronisierung frisch generierten Schlüssel und passieren niemals einen Drittanbieter-Server oder die Cloud.</li>
+    <li><strong>Kamera</strong>: Nur zum Scannen von QR-Codes, wenn Sie die Zwei-Faktor-Authentifizierung (TOTP) hinzufügen. Die Kamera ist nur während des Scannens aktiv; sie macht keine Fotos und speichert nichts in Ihre Fotomediathek.</li>
+    <li><strong>Face ID / Touch ID</strong>: Zum Entsperren der App und Ihres Tresors, unterstützt auch den Geräte-Passcode (vom System verifiziert). Die App sperrt automatisch, wenn sie in den Hintergrund tritt oder ungenutzt bleibt, und Daten können im gesperrten Zustand nicht gelesen werden. Die Verifizierung erfolgt durch das System; die App speichert keine Entsperr-Anmeldedaten (Biometrie und Geräte-Passcode werden beide vom System gehalten).</li>
+  </ul>
+  <p><strong>Wir geben Ihre personenbezogenen Daten an keine Dritten weiter und betreiben kein nutzerübergreifendes Tracking über Apps oder Websites hinweg.</strong> Die App integriert keine Drittanbieter-SDKs (keine Werbung, keine Analyse, kein Social-Sharing und keine für Tracking verwendeten Drittanbieter-SDKs oder Kennungen). Außer der notwendigen Kommunikation mit Apple (In-App-Käufe/Abonnements über Apple sowie der an Ihr Apple-Konto gebundene Berechtigungs-Marker) tauscht die App Daten mit keinem Drittanbieter-Dienst aus.</p>
+
+  <h2>4. Datensicherheit</h2>
+  <ul>
+    <li>Alle Tresordaten werden lokal auf Ihrem Gerät mit <strong>starker Verschlüsselung</strong> gespeichert;</li>
+    <li>Der für das Entsperren verwendete Schlüssel wird durch <strong>Geräte-Sicherheitshardware</strong> geschützt und nur auf Ihrem Gerät gehalten; er verlässt Ihr Gerät nie;</li>
+    <li>Datendateien sind explizit als <strong>von iCloud- oder iTunes-Backups ausgeschlossen</strong> markiert;</li>
+    <li>Nachdem Sie ein Passwort kopiert haben, wird die Zwischenablage <strong>nach etwa 60 Sekunden automatisch geleert</strong>;</li>
+    <li>Der Export Ihrer Daten in eine Klartext-CSV-Datei (die 2FA-Schlüssel enthält) erfordert eine <strong>biometrische Bestätigung</strong> — eine Klartextdatei ist für jeden lesbar, bewahren Sie sie daher sicher auf und löschen Sie sie, wenn Sie fertig sind;</li>
+    <li>Da Ihre Daten Ihr Gerät nie verlassen, ist das Deinstallieren der App oder das vollständige Löschen innerhalb der App endgültig; wir halten keine Kopie.</li>
+  </ul>
+
+  <h2>5. Datenaufbewahrung</h2>
+  <p>Ihre geräteinternen Tresordaten werden aufbewahrt, bis Sie sie innerhalb der App löschen oder die App deinstallieren. Wir bewahren auf keinem Server Tresordaten auf. Der mit Ihrem Abonnement oder Testberechtigung verbundene Berechtigungs-Marker dient nur dazu, aufzuzeichnen, ob dieses Apple-Konto seine „kostenlose Erstsynchronisierung" bereits genutzt hat, enthält keine Tresordaten und wird mit diesem Apple-Konto gespeichert. Kaufdatensätze werden von Apple gemäß dessen eigenen Datenschutzrichtlinie aufbewahrt.</p>
+
+  <h2>6. Ihre Datenschutzrechte und Datenkontrolle</h2>
+  <p>Ihre Tresordaten werden vollständig auf Ihrem eigenen Gerät gespeichert und stehen unter Ihrer Kontrolle, sodass Sie die direkte Kontrolle über Ihre Daten haben: Sie können <strong>jederzeit innerhalb der App Ihren gesamten Tresor exportieren oder dauerhaft löschen</strong>, ohne dies bei uns beantragen zu müssen. Aufzeichnungen zu Abonnements und Käufen werden von Apple gehalten; wenden Sie sich zur Verwaltung bitte an Apple (über Ihr Apple-Konto).</p>
+
+  <h2>7. Datenschutz für Kinder</h2>
+  <p>PriPassword steht Nutzern jeden Alters zur Verfügung, und wir erheben wissentlich keine personenbezogenen Informationen von Kindern unter 13 Jahren. Wenn Sie glauben, dass wir versehentlich Informationen eines Kindes erfasst haben, lassen Sie es uns über die unten stehenden Kontaktdaten wissen, und wir werden sie so schnell wie möglich löschen.</p>
+
+  <h2>8. Änderungen dieser Richtlinie</h2>
+  <p>Wenn diese Richtlinie aktualisiert wird, veröffentlichen wir sie auf dieser Seite und geben das Gültigkeitsdatum an. Unser Kernversprechen ändert sich jedoch nicht: <strong>Ihre Tresordaten gehören Ihnen, und nur Ihnen.</strong></p>
+
+  <h2>9. Kontakt</h2>
+  <p>Bei Fragen zum Datenschutz kontaktieren Sie uns unter <a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a> oder besuchen Sie unsere Support-Seite.</p>
+
+</div>
+
+<!-- ===================== Français ===================== -->
+<div class="lang-block" data-lang="fr" hidden>
+  <h1 class="doc__title">Politique de confidentialité</h1>
+  <p class="doc__meta">Date d'effet : 1er novembre 2026</p>
+
+  <p>La présente politique de confidentialité explique comment PriPassword (ci-après « l'App » ou « nous ») collecte, utilise, stocke et protège vos informations. PriPassword est un gestionnaire de mots de passe local-first : votre coffre-fort de mots de passe réside uniquement sur vos propres appareils et est protégé par un chiffrement robuste. Il ne quitte jamais votre appareil et n'est jamais téléversé vers un serveur ou un cloud. L'App ne transmet pas vos mots de passe ou données de coffre à quelque service externe que ce soit ; la seule communication sortante concerne Apple pour les achats/abonnements et le marqueur d'éligibilité (lié à votre compte Apple), et aucune de ces communications ne contient vos données de coffre.</p>
+
+  <h2>1. Collectons-nous vos données personnelles ?</h2>
+  <p>Nous traitons le moins de données personnelles possible. En fait, les <strong>données de coffre de l'App ne sont jamais transmises à un serveur ni stockées sur un serveur — elles restent uniquement sur votre appareil</strong> ; votre statut d'achat et d'éligibilité est géré par Apple sous votre compte Apple (et ne contient aucune donnée de coffre), et nous ne collectons ni l'un ni l'autre. Le tableau ci-dessous montre comment nous traitons les données vous concernant :</p>
+  <table>
+    <thead>
+      <tr><th>Type de données</th><th>Description</th><th>Collectées/stockées par nous ?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Données de coffre (mots de passe, notes, clés 2FA, etc.)</td><td>Stockées uniquement localement sur votre appareil et sous votre contrôle</td><td>Non — uniquement sur votre appareil ; nous ne pouvons pas les lire ni les téléverser</td></tr>
+      <tr><td>Marqueur d'éligibilité (lié à votre compte Apple)</td><td>Utilisé dans l'App pour gérer centralement votre « première synchronisation gratuite » ; ne contient aucun mot de passe ni information de compte et identifie uniquement ce statut d'éligibilité</td><td>Non — synchronisé par Apple entre vos propres appareils</td></tr>
+      <tr><td>Enregistrements d'achat intégré et d'abonnement</td><td>Gérés par Apple ; nous ne recevons que le résultat indiquant si le paiement/l'abonnement est actif</td><td>Non — nous ne recevons que le résultat et n'obtenons jamais vos informations de paiement</td></tr>
+    </tbody>
+  </table>
+  <p>Nous n'accédons jamais non plus à des informations sensibles telles que vos contacts, photos ou localisation, et nous n'intégrons aucun SDK d'analyse, de publicité ou de rapport de crash tiers, ni ne téléversons de données de diagnostic ou d'utilisation (y compris les journaux d'incident). Les frameworks système utilisés par l'App (notamment pour les notifications locales) sont entièrement traités sur l'appareil. Les retours par e-mail sont rédigés par vous et envoyés via votre propre compte e-mail ; l'App n'y lit rien et ne téléverse pas vos données de coffre.</p>
+
+  <h2>2. Comment nous utilisons ces informations</h2>
+  <ul>
+    <li><strong>Chiffrer, stocker et afficher</strong> localement vos données de coffre sur votre appareil ;</li>
+    <li><strong>Synchroniser les données entre vos appareils</strong> via un transfert direct de appareil à appareil, uniquement lorsque <strong>vous l'initiez</strong> (but et permissions voir section 3) ;</li>
+    <li><strong>Finaliser les achats et abonnements via Apple</strong> et vous fournir les fonctionnalités achetées.</li>
+  </ul>
+
+  <h2>3. Autorisations, partage de données et tiers</h2>
+  <p>L'App demande les autorisations système suivantes, et uniquement lorsqu'une fonction en a besoin et pour les finalités claires ci-dessous :</p>
+  <ul>
+    <li><strong>Bluetooth</strong> : utilisé pour le transfert direct de appareil à appareil afin de synchroniser les données. La synchronisation est lancée manuellement par vous, n'est active que pendant une session de synchronisation, et il n'y a ni processus résident en arrière-plan ni connexion permanente ; les transferts utilisent un chiffrement de bout en bout avec une clé générée à chaque synchronisation, et ne passent jamais par un serveur tiers ou le cloud.</li>
+    <li><strong>Appareil photo</strong> : utilisé uniquement pour scanner des QR codes lorsque vous ajoutez l'authentification à deux facteurs (TOTP). L'appareil photo n'est actif que pendant le scan ; il ne prend pas de photo et n'enregistre rien dans votre photothèque.</li>
+    <li><strong>Face ID / Touch ID</strong> : utilisé pour déverrouiller l'App et votre coffre, et prend également en charge le code de l'appareil (vérifié par le système). L'App se verrouille automatiquement lorsqu'elle passe en arrière-plan ou reste inactive, et les données ne peuvent pas être lues lorsqu'elle est verrouillée. La vérification est effectuée par le système ; l'App ne stocke aucune information d'identification de déverrouillage (la biométrie et le code de l'appareil sont tous deux détenus par le système).</li>
+  </ul>
+  <p><strong>Nous ne partageons pas vos données personnelles avec des tiers et ne pratiquons aucun suivi des utilisateurs entre applications ou sites web.</strong> L'App n'intègre aucun SDK tiers (pas de publicité, pas d'analyse, pas de partage social, et aucun SDK ou identifiant tiers utilisé pour le suivi). À l'exception de la communication nécessaire avec Apple (achats/abonnements intégrés via Apple, ainsi que le marqueur d'éligibilité lié à votre compte Apple), l'App n'échange aucune donnée avec un service tiers.</p>
+
+  <h2>4. Sécurité des données</h2>
+  <ul>
+    <li>Toutes les données de coffre sont stockées localement sur votre appareil avec un <strong>chiffrement robuste</strong> ;</li>
+    <li>La clé utilisée pour le déverrouillage est protégée par le <strong>matériel de sécurité de l'appareil</strong> et conservée uniquement sur votre appareil ; elle ne quitte jamais votre appareil ;</li>
+    <li>Les fichiers de données sont explicitement marqués comme <strong>exclus des sauvegardes iCloud ou iTunes</strong> ;</li>
+    <li>Après avoir copié un mot de passe, le presse-papiers est <strong>automatiquement vidé après environ 60 secondes</strong> ;</li>
+    <li>L'exportation de vos données vers un fichier CSV en texte clair (qui contient les clés 2FA) nécessite une <strong>confirmation biométrique</strong> — un fichier en texte clair est lisible par quiconque, conservez-le donc en sécurité et supprimez-le une fois terminé ;</li>
+    <li>Comme vos données ne quittent jamais votre appareil, la désinstallation de l'App ou la suppression complète depuis l'App est définitive ; nous n'en conservons aucune copie.</li>
+  </ul>
+
+  <h2>5. Conservation des données</h2>
+  <p>Vos données de coffre sur l'appareil sont conservées jusqu'à ce que vous les supprimiez dans l'App ou désinstalliez l'App. Nous ne conservons aucune donnée de coffre sur aucun serveur. Le marqueur d'éligibilité lié à votre abonnement ou à votre essai sert uniquement à enregistrer si ce compte Apple a utilisé sa « première synchronisation gratuite », ne contient aucune donnée de coffre et est stocké avec ce compte Apple. Les enregistrements d'achat sont conservés par Apple conformément à sa propre politique de confidentialité.</p>
+
+  <h2>6. Vos droits à la confidentialité et contrôle des données</h2>
+  <p>Vos données de coffre sont entièrement stockées sur votre propre appareil et sous votre contrôle, vous disposez donc d'un contrôle direct sur vos données : vous pouvez <strong>exporter ou supprimer définitivement</strong> l'intégralité de votre coffre à tout moment depuis l'App, sans avoir à nous le demander. Les enregistrements liés aux abonnements et achats sont détenus par Apple ; pour les gérer, veuillez contacter Apple (via votre compte Apple).</p>
+
+  <h2>7. Confidentialité des enfants</h2>
+  <p>PriPassword est disponible pour les utilisateurs de tous âges, et nous ne collectons sciemment aucune information personnelle d'enfants de moins de 13 ans. Si vous pensez que nous avons par erreur collecté des informations sur un enfant, faites-le nous savoir via les coordonnées ci-dessous et nous les supprimerons dès que possible.</p>
+
+  <h2>8. Modifications de cette politique</h2>
+  <p>Si cette politique est mise à jour, nous la publierons sur cette page et indiquerons la date d'effet. Mais notre engagement central ne changera pas : <strong>vos données de coffre vous appartiennent, et vous seul.</strong></p>
+
+  <h2>9. Nous contacter</h2>
+  <p>Pour toute question sur la confidentialité, contactez-nous à <a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a>, ou visitez notre page de support.</p>
+
+</div>
+
+<!-- ===================== 한국어 ===================== -->
+<div class="lang-block" data-lang="ko" hidden>
+  <h1 class="doc__title">개인정보 처리방침</h1>
+  <p class="doc__meta">시행일: 2026년 11월 1일</p>
+
+  <p>본 개인정보 처리방침은 PriPassword(이하 "앱" 또는 "당사")가 귀하의 정보를 수집·이용·저장·보호하는 방법을 설명합니다. PriPassword는 로컬 우선 비밀번호 관리자입니다. 귀하의 비밀번호 금고는 오직 귀하의 기기에만 저장되며 강력한 암호화로 보호됩니다. 금고는 기기를 떠나지 않으며 어떤 서버나 클라우드에도 업로드되지 않습니다. 앱은 귀하의 비밀번호나 금고 데이터를 어떤 외부 서비스로도 전송하지 않으며, Apple과의 구매/구독 및 자격 표시(귀하의 Apple 계정 연결) 관련 통신만이 외부와 이루어지고, 이 통신에는 귀하의 금고 데이터가 포함되지 않습니다.</p>
+
+  <h2>1. 당사는 귀하의 개인정보를 수집합니까?</h2>
+  <p>당사는 가능한 한 최소한의 개인정보만 처리합니다. 사실, 앱의 <strong>금고 데이터는 어떤 서버로도 전송되거나 저장되지 않으며 오직 귀하의 기기에만 머뭅니다</strong>; 구매 및 자격 상태는 귀하의 Apple 계정 아래에서 Apple이 처리하며(금고 데이터 포함 안 됨), 당사는 어느 것도 수집하지 않습니다. 다음 표는 당사가 귀하와 관련된 데이터를 어떻게 다루는지 보여줍니다:</p>
+  <table>
+    <thead>
+      <tr><th>데이터 유형</th><th>설명</th><th>당사가 수집/저장합니까?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>금고 데이터(비밀번호, 메모, 2단계 인증 키 등)</td><td>귀하의 기기에만 로컬로 저장되며 귀하가 통제</td><td>아니요 — 오직 귀하의 기기에만 머물며, 당사는 이를 읽거나 업로드할 수 없음</td></tr>
+      <tr><td>자격 표시값(귀하의 Apple 계정 연결)</td><td>앱 내에서 "첫 동기화 무료" 자격을 중앙에서 관리하는 데 사용. 비밀번호나 계정 정보를 포함하지 않으며 오직 해당 자격 상태를 식별</td><td>아니요 — Apple이 귀하의 기기들 사이에서 동기화</td></tr>
+      <tr><td>앱 내 구매 및 구독 기록</td><td>Apple이 처리. 당사는 "결제/구독 여부" 결과만 받음</td><td>아니요 — 당사는 결과만 받으며 귀하의 결제 정보를 얻지 않음</td></tr>
+    </tbody>
+  </table>
+  <p>또한 당사는 연락처, 사진, 위치 등 민감한 정보에 전혀 접근하지 않으며, 제3자 분석·광고·크래시 보고 SDK를 일체 통합하지 않고 진단 또는 사용 데이터(크래시 로그 포함)도 업로드하지 않습니다. 앱이 사용하는 시스템 프레임워크(예: 로컬 알림)는 모두 기기에서 처리됩니다. 이메일 피드백은 귀하가 직접 작성하여 귀하의 이메일 계정으로 보내는 것이며, 앱이 이를 읽거나 귀하의 금고 데이터를 업로드하지 않습니다.</p>
+
+  <h2>2. 당사는 이 정보를 어떻게 사용합니까?</h2>
+  <ul>
+    <li>귀하의 기기에서 귀하의 금고 데이터를 <strong>로컬로 암호화·저장·표시</strong>;</li>
+    <li>귀하가 <strong>직접 시작할 때에만</strong> 기기 간 직접 전송을 통해 데이터를 동기화(목적과 권한은 제3절 참조);</li>
+    <li>Apple을 통해 구매 및 구독을 완료하고 구매한 기능을 제공.</li>
+  </ul>
+
+  <h2>3. 권한, 데이터 공유 및 제3자</h2>
+  <p>앱은 다음 시스템 권한을 요청하며, 기능에 필요한 경우에 한해 다음의 명확한 목적으로만 사용합니다:</p>
+  <ul>
+    <li><strong>블루투스(Bluetooth)</strong>: 기기 간에 직접 전송하여 데이터를 동기화하는 데 사용. 동기화는 귀하가 수동으로 시작하며 동기화 세션 중에만 작동하며, 백그라운드에 상주하는 프로세스나 항상 열린 연결은 없습니다. 전송은 엔드투엔드 암호화를 사용하며 매 동기화마다 임시 키를 생성하고 어떤 제3자 서버나 클라우드도 거치지 않습니다.</li>
+    <li><strong>카메라</strong>: 2단계 인증(TOTP)을 추가할 때 QR 코드를 스캔하는 용도로만 사용. 카메라는 스캔 중에만 활성화되며 사진을 찍거나 사진 보관함에 저장하지 않습니다.</li>
+    <li><strong>Face ID / Touch ID</strong>: 앱과 금고 잠금 해제에 사용되며 기기 암호(시스템이 검증)도 지원. 앱이 백그라운드로 가거나 방치되면 자동 잠금되고 잠긴 상태에서는 데이터를 읽을 수 없습니다. 검증은 시스템이 수행하며, 앱은 잠금 해제용 자격 정보(생체 인식과 기기 암호는 모두 시스템이 보관)를 저장하지 않습니다.</li>
+  </ul>
+  <p><strong>당사는 귀하의 개인정보를 어떤 제3자와도 공유하지 않으며, 앱이나 사이트를 넘나드는 사용자 추적도 하지 않습니다.</strong> 앱은 어떠한 제3자 SDK(광고, 분석, 소셜 공유, 그리고 추적에 사용되는 제3자 SDK나 식별자)도 통합하지 않습니다. Apple과의 필요한 통신(Apple을 통한 앱 내 구매/구독, 그리고 귀하의 Apple 계정에 연결된 자격 표시값)을 제외하고, 앱은 그 어떤 제3자 서비스와도 데이터를 교환하지 않습니다.</p>
+
+  <h2>4. 데이터 보안</h2>
+  <ul>
+    <li>모든 금고 데이터는 귀하의 기기에 <strong>강력한 암호화</strong>로 저장;</li>
+    <li>잠금 해제에 쓰이는 키는 <strong>기기 보안 하드웨어</strong>로 보호되어 귀하의 기기에만 저장되며 기기를 떠나지 않음;</li>
+    <li>데이터 파일은 <strong>iCloud 또는 iTunes 백업에서 제외</strong>되도록 명시적으로 표시;</li>
+    <li>비밀번호를 복사한 후 클립보드는 약 <strong>60초</strong> 후 자동으로 지워짐;</li>
+    <li>2단계 인증 키를 포함한 데이터를 일반 텍스트 CSV 파일로 내보내기 전에는 <strong>생체 인식 확인</strong>이 필요함 — 일반 텍스트 파일은 누구나 읽을 수 있으니 안전하게 보관하고 사용 후 삭제하십시오;</li>
+    <li>데이터가 기기를 떠나지 않으므로 앱 삭제나 앱 내 완전 삭제는 영구 삭제이며, 당사에 사본이 없음.</li>
+  </ul>
+
+  <h2>5. 데이터 보관</h2>
+  <p>기기의 금고 데이터는 앱 내에서 삭제하거나 앱을 제거할 때까지 보관됩니다. 당사는 어떤 서버에도 금고 데이터를 보관하지 않습니다. 구독 또는 체험 자격과 관련된 자격 표시값은 해당 Apple 계정이 "첫 동기화 무료"를 이미 사용했는지 여부만 기록하는 데 쓰이며 금고 데이터를 포함하지 않고 해당 Apple 계정과 함께 저장됩니다. 구매 기록은 Apple이 자체 개인정보 처리방침에 따라 보관합니다.</p>
+
+  <h2>6. 귀하의 개인정보 권리와 데이터 통제</h2>
+  <p>귀하의 금고 데이터는 오직 귀하의 기기에 완전히 저장되며 귀하가 통제하므로, 귀하는 자신의 데이터에 대한 직접적인 통제권을 갖습니다. 앱 내에서 언제든 전체 금고를 <strong>내보내거나 완전히 삭제</strong>할 수 있으며 당사에 요청할 필요가 없습니다. 구독 및 구매 관련 기록은 Apple이 보관하므로, 처리는 Apple(귀하의 Apple 계정)에 문의하십시오.</p>
+
+  <h2>7. 아동의 개인정보</h2>
+  <p>PriPassword는 모든 연령이 이용할 수 있으며, 당사는 13세 미만 아동의 개인정보를 고의로 수집하지 않습니다. 아동의 정보를 잘못 수집했다고 판단되면 아래 연락처로 알려주시면 최대한 빠르게 삭제하겠습니다.</p>
+
+  <h2>8. 정책 변경</h2>
+  <p>본 정책이 업데이트되면 이 페이지에 게시하고 시행일을 명시합니다. 하지만 우리의 핵심 약속은 변하지 않습니다: <strong>귀하의 금고 데이터는 귀하의 것이며, 오직 귀하만의 것입니다.</strong></p>
+
+  <h2>9. 연락처</h2>
+  <p>개인정보에 관한 문의는 <a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a>으로 이메일 주시거나 지원 페이지를 방문하십시오.</p>
+
+</div>
+
+<!-- ===================== Español ===================== -->
+<div class="lang-block" data-lang="es" hidden>
+  <h1 class="doc__title">Política de privacidad</h1>
+  <p class="doc__meta">Fecha de vigencia: 1 de noviembre de 2026</p>
+
+  <p>Esta política de privacidad explica cómo PriPassword (en este documento, "la App" o "nosotros") recopila, utiliza, almacena y protege tu información. PriPassword es un gestor de contraseñas de prioridad local: tu bóveda de contraseñas reside únicamente en tus propios dispositivos y está protegida con cifrado fuerte. Nunca sale de tu dispositivo y nunca se sube a ningún servidor ni a la nube. La App no transmite tus contraseñas ni los datos de tu bóveda a ningún servicio externo; la única comunicación saliente es con Apple para compras/suscripciones y para el marcador de elegibilidad (vinculado a tu cuenta de Apple), y ninguna de esas comunicaciones contiene los datos de tu bóveda.</p>
+
+  <h2>1. ¿Recopilamos tus datos personales?</h2>
+  <p>Tratamos la menor cantidad posible de datos personales. De hecho, los <strong>datos de la bóveda de la App nunca se transmiten a ni se almacenan en ningún servidor — permanecen únicamente en tu dispositivo</strong>; tu estado de compra y de elegibilidad lo gestiona Apple bajo tu cuenta de Apple (y no contiene datos de la bóveda), y nosotros no recopilamos ninguno de los dos. La tabla siguiente muestra cómo nos relacionamos con los datos que te conciernen:</p>
+  <table>
+    <thead>
+      <tr><th>Tipo de dato</th><th>Descripción</th><th>¿Recopilado/almacenado por nosotros?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Datos de la bóveda (contraseñas, notas, claves 2FA, etc.)</td><td>Almacenados solo localmente en tu dispositivo y bajo tu control</td><td>No — permanecen solo en tu dispositivo; no podemos leerlos ni los subimos</td></tr>
+      <tr><td>Marcador de elegibilidad (vinculado a tu cuenta de Apple)</td><td>Usado dentro de la App para gestionar centralmente tu "primera sincronización gratuita"; no contiene contraseñas ni información de cuenta y solo identifica ese estado de elegibilidad</td><td>No — sincronizado por Apple entre tus propios dispositivos</td></tr>
+      <tr><td>Registros de compra dentro de la app y de suscripción</td><td>Gestionados por Apple; solo recibimos el resultado de si el pago/la suscripción está activo</td><td>No — solo recibimos el resultado y nunca obtenemos tu información de pago</td></tr>
+    </tbody>
+  </table>
+  <p>Tampoco accedemos nunca a información sensible como tus contactos, fotos o ubicación, ni integramos ningún SDK de analítica, publicidad o informes de fallos de terceros, ni subimos datos de diagnóstico o de uso (incluidos los registros de fallos). Los frameworks del sistema que usa la App (por ejemplo, para notificaciones locales) se procesan completamente en el dispositivo. Los comentarios por correo los redactas tú y se envían a través de tu propia cuenta de correo; la App no los lee ni sube los datos de tu bóveda.</p>
+
+  <h2>2. Cómo utilizamos esta información</h2>
+  <ul>
+    <li><strong>Cifrar, almacenar y mostrar</strong> localmente los datos de tu bóveda en tu dispositivo;</li>
+    <li><strong>Sincronizar los datos entre tus dispositivos</strong> mediante transferencia directa de dispositivo a dispositivo, solo cuando <strong>tú la inicies</strong> (el propósito y los permisos se describen en la sección 3);</li>
+    <li><strong>Completar compras y suscripciones a través de Apple</strong> y proporcionarte las funciones que has comprado.</li>
+  </ul>
+
+  <h2>3. Permisos, intercambio de datos y terceros</h2>
+  <p>La App solicita los siguientes permisos del sistema, y solo cuando una función los necesita y para los fines claros siguientes:</p>
+  <ul>
+    <li><strong>Bluetooth</strong>: se usa para la transferencia directa de dispositivo a dispositivo a fin de sincronizar datos. La sincronización la inicias manualmente tú, solo está activa durante una sesión de sincronización y no hay ningún proceso residente en segundo plano ni conexión persistente; las transferencias usan cifrado de extremo a extremo con una clave nueva generada para cada sincronización, y nunca pasan por ningún servidor de terceros ni por la nube.</li>
+    <li><strong>Cámara</strong>: se usa solo para escanear códigos QR cuando añades la autenticación de dos factores (TOTP). La cámara solo está activa mientras escaneas; no toma fotos ni guarda nada en tu carrete.</li>
+    <li><strong>Face ID / Touch ID</strong>: se usa para desbloquear la App y tu bóveda, y también admite el código del dispositivo (verificado por el sistema). La App se bloquea automáticamente al pasar a segundo plano o quedar inactiva, y los datos no pueden leerse mientras está bloqueada. La verificación la realiza el sistema; la App no almacena ninguna credencial de desbloqueo (la biometría y el código del dispositivo los guarda el sistema).</li>
+  </ul>
+  <p><strong>No compartimos tus datos personales con terceros ni realizamos seguimiento de usuarios entre aplicaciones o sitios web.</strong> La App no integra ningún SDK de terceros (sin publicidad, sin analítica, sin compartir en redes sociales, y ningún SDK o identificador de terceros usado para el seguimiento). Salvo la comunicación necesaria con Apple (compras/suscripciones dentro de la app vía Apple, así como el marcador de elegibilidad vinculado a tu cuenta de Apple), la App no intercambiatos datos con ningún servicio de terceros.</p>
+
+  <h2>4. Seguridad de los datos</h2>
+  <ul>
+    <li>Todos los datos de la bóveda se almacenan localmente en tu dispositivo con <strong>cifrado fuerte</strong>;</li>
+    <li>La clave usada para desbloquear está protegida por el <strong>hardware de seguridad del dispositivo</strong> y se guarda solo en tu dispositivo; nunca sale de tu dispositivo;</li>
+    <li>Los archivos de datos se marcan explícitamente como <strong>excluidos de las copias de seguridad de iCloud o iTunes</strong>;</li>
+    <li>Tras copiar una contraseña, el portapapeles se <strong>borra automáticamente tras unos 60 segundos</strong>;</li>
+    <li>Exportar tus datos a un archivo CSV de texto plano (que contiene las claves 2FA) requiere <strong>confirmación biométrica</strong> — un archivo de texto plano puede ser leído por cualquiera, así que guárdalo de forma segura y elimínalo cuando termines;</li>
+    <li>Como tus datos nunca salen de tu dispositivo, desinstalar la App o eliminarlos por completo desde la App es definitivo; no conservamos ninguna copia.</li>
+  </ul>
+
+  <h2>5. Conservación de datos</h2>
+  <p>Tus datos de bóveda en el dispositivo se conservan hasta que los elimines dentro de la App o desinstales la App. No conservamos datos de la bóveda en ningún servidor. El marcador de elegibilidad relacionado con tu suscripción o prueba sirve únicamente para registrar si esa cuenta de Apple ya usó su "primera sincronización gratuita", no contiene datos de la bóveda y se almacena con esa cuenta de Apple. Los registos de compra los conserva Apple según su propia política de privacidad.</p>
+
+  <h2>6. Tus derechos de privacidad y control de datos</h2>
+  <p>Tus datos de bóveda se almacenan por completo en tu propio dispositivo y están bajo tu control, por lo que tienes control directo sobre tus datos: puedes <strong>exportar o eliminar de forma permanente</strong> toda tu bóveda en cualquier momento desde la App, sin necesidad de solicitárnoslo. Los registros relacionados con suscripciones y compras los conserva Apple; para gestionarlos, contacta con Apple (a través de tu cuenta de Apple).</p>
+
+  <h2>7. Privacidad de los niños</h2>
+  <p>PriPassword está disponible para usuarios de todas las edades, y no recopilamos a sabiendas información personal de niños menores de 13 años. Si crees que hemos recopilado por error información de un niño, avísanos usando los datos de contacto de abajo y la eliminaremos lo antes posible.</p>
+
+  <h2>8. Cambios en esta política</h2>
+  <p>Si esta política se actualiza, la publicaremos en esta página e indicaremos la fecha de vigencia. Pero nuestro compromiso central no cambiará: <strong>tus datos de bóveda te pertenecen, y solo a ti.</strong></p>
+
+  <h2>9. Contacto</h2>
+  <p>Para cualquier duda de privacidad, contáctanos en <a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a>, o visita nuestra página de soporte.</p>
+
+</div>
+
+<!-- ===================== Português ===================== -->
+<div class="lang-block" data-lang="pt" hidden>
+  <h1 class="doc__title">Política de Privacidade</h1>
+  <p class="doc__meta">Data de vigência: 1 de novembro de 2026</p>
+
+  <p>Esta política de privacidade explica como o PriPassword (neste documento, "o App" ou "nós") coleta, utiliza, armazena e protege suas informações. O PriPassword é um gerenciador de senhas local-first: seu cofre de senhas reside exclusivamente em seus próprios dispositivos e é protegido com criptografia forte. Ele nunca sai do seu dispositivo e nunca é enviado a nenhum servidor ou nuvem. O App não transmite suas senhas ou dados do cofre a nenhum serviço externo; a única comunicação de saída é com a Apple para compras/assinaturas e para o marcador de elegibilidade (vinculado à sua conta Apple), e nenhuma dessas comunicações contém os dados do seu cofre.</p>
+
+  <h2>1. Coletamos seus dados pessoais?</h2>
+  <p>Tratamos a menor quantidade possível de dados pessoais. Na verdade, os <strong>dados do cofre do App nunca são transmitidos a nem armazenados em nenhum servidor — permanecem exclusivamente no seu dispositivo</strong>; seu status de compra e de elegibilidade é gerenciado pela Apple sob sua conta Apple (e não contém dados do cofre), e nós não coletamos nenhum dos dois. A tabela a seguir mostra como nos relacionamos com os dados a você associados:</p>
+  <table>
+    <thead>
+      <tr><th>Tipo de dado</th><th>Descrição</th><th>Coletado/armazenado por nós?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Dados do cofre (senhas, notas, chaves 2FA etc.)</td><td>Armazenados apenas localmente no seu dispositivo e sob seu controle</td><td>Não — permanecem apenas no seu dispositivo; não podemos lê-los nem os enviamos</td></tr>
+      <tr><td>Marcador de elegibilidade (vinculado à sua conta Apple)</td><td>Usado dentro do App para gerenciar centralmente sua "primeira sincronização gratuita"; não contém senhas nem informações de conta e identifica apenas esse status de elegibilidade</td><td>Não — sincronizado pela Apple entre seus próprios dispositivos</td></tr>
+      <tr><td>Registros de compra no app e de assinatura</td><td>Gerenciados pela Apple; recebemos apenas o resultado de se o pagamento/a assinatura está ativo</td><td>Não — recebemos apenas o resultado e nunca obtemos suas informações de pagamento</td></tr>
+    </tbody>
+  </table>
+  <p>Também nunca acessamos informações sensíveis como seus contatos, fotos ou localização, e não integramos nenhum SDK de análise, publicidade ou relatório de falhas de terceiros, nem enviamos dados de diagnóstico ou de uso (incluindo registros de falhas). As estruturas de sistema que o App utiliza (por exemplo, para notificações locais) são processadas inteiramente no dispositivo. O feedback por e-mail é redigido por você e enviado através da sua própria conta de e-mail; o App não o lê nem envia os dados do seu cofre.</p>
+
+  <h2>2. Como utilizamos essas informações</h2>
+  <ul>
+    <li><strong>Criptografar, armazenar e exibir</strong> localmente os dados do seu cofre no seu dispositivo;</li>
+    <li><strong>Sincronizar os dados entre seus dispositivos</strong> por meio de transferência direta de dispositivo a dispositivo, apenas quando <strong>você a iniciar</strong> (finalidade e permissões descritas na seção 3);</li>
+    <li><strong>Concluir compras e assinaturas através da Apple</strong> e fornecer a você os recursos adquiridos.</li>
+  </ul>
+
+  <h2>3. Permissões, compartilhamento de dados e terceiros</h2>
+  <p>O App solicita as seguintes permissões do sistema, e apenas quando uma função precisa delas e para as finalidades claras a seguir:</p>
+  <ul>
+    <li><strong>Bluetooth</strong>: usado para a transferência direta de dispositivo a dispositivo a fim de sincronizar dados. A sincronização é iniciada manualmente por você, fica ativa apenas durante uma sessão de sincronização e não há nenhum processo residente em segundo plano nem conexão persistente; as transferências usam criptografia de ponta a ponta com uma chave nova gerada para cada sincronização, e nunca passam por nenhum servidor de terceiros nem pela nuvem.</li>
+    <li><strong>Câmera</strong>: usada apenas para escanear códigos QR quando você adiciona a autenticação de dois fatores (TOTP). A câmera fica ativa apenas durante a leitura; não tira fotos nem salva nada no seu rolo.</li>
+    <li><strong>Face ID / Touch ID</strong>: usado para desbloquear o App e seu cofre, e também aceita a senha do dispositivo (verificada pelo sistema). O App trava automaticamente ao ir para segundo plano ou ficar ocioso, e os dados não podem ser lidos enquanto está travado. A verificação é feita pelo sistema; o App não armazena nenhuma credencial de desbloqueio (a biometria e a senha do dispositivo são mantidas pelo sistema).</li>
+  </ul>
+  <p><strong>Não compartilhamos seus dados pessoais com terceiros e não realizamos rastreamento de usuários entre aplicativos ou sites.</strong> O App não integra nenhum SDK de terceiros (sem publicidade, sem análise, sem compartilhamento social, e nenhum SDK ou identificador de terceiros usado para rastreamento). Exceto pela comunicação necessária com a Apple (compras/assinaturas no app via Apple, bem como o marcador de elegibilidade vinculado à sua conta Apple), o App não troca dados com nenhum serviço de terceiros.</p>
+
+  <h2>4. Segurança dos dados</h2>
+  <ul>
+    <li>Todos os dados do cofre são armazenados localmente no seu dispositivo com <strong>criptografia forte</strong>;</li>
+    <li>A chave usada para desbloquear é protegida pelo <strong>hardware de segurança do dispositivo</strong> e mantida apenas no seu dispositivo; ela nunca sai do seu dispositivo;</li>
+    <li>Os arquivos de dados são explicitamente marcados como <strong>excluídos de backups do iCloud ou iTunes</strong>;</li>
+    <li>Após copiar uma senha, a área de transferência é <strong>limpa automaticamente após cerca de 60 segundos</strong>;</li>
+    <li>Exportar seus dados para um arquivo CSV em texto puro (que contém as chaves 2FA) exige <strong>confirmação biométrica</strong> — um arquivo em texto puro pode ser lido por qualquer pessoa, então guarde-o com segurança e exclua-o ao terminar;</li>
+    <li>Como seus dados nunca saem do seu dispositivo, desinstalar o App ou excluí-los completamente pelo App é definitivo; não mantemos nenhuma cópia.</li>
+  </ul>
+
+  <h2>5. Retenção de dados</h2>
+  <p>Seus dados de cofre no dispositivo são retidos até você excluí-los no app ou desinstalar o app. Não retemos dados do cofre em nenhum servidor. O marcador de elegibilidade relacionado à sua assinatura ou teste serve apenas para registrar se essa conta Apple já usou sua "primeira sincronização gratuita", não contém dados do cofre e é armazenado com essa conta Apple. Os registros de compra são retidos pela Apple conforme sua própria política de privacidade.</p>
+
+  <h2>6. Seus direitos de privacidade e controle de dados</h2>
+  <p>Seus dados de cofre são armazenados inteiramente no seu próprio dispositivo e estão sob seu controle, portanto você tem controle direto sobre seus dados: pode <strong>exportar ou excluir permanentemente</strong> todo o seu cofre a qualquer momento pelo App, sem precisar nos solicitar. Os registros relacionados a assinaturas e compras são mantidos pela Apple; para gerenciá-los, contate a Apple (através da sua conta Apple).</p>
+
+  <h2>7. Privacidade de crianças</h2>
+  <p>O PriPassword está disponível para usuários de todas as idades, e não coletamos conscientemente nenhuma informação pessoal de crianças menores de 13 anos. Se achar que coletamos por engano informações de uma criança, avise-nos usando os dados de contato abaixo e as excluiremos o mais rápido possível.</p>
+
+  <h2>8. Alterações nesta política</h2>
+  <p>Se esta política for atualizada, a publicaremos nesta página e indicaremos a data de vigência. Mas nosso compromisso central não mudará: <strong>os dados do seu cofre pertencem a você, e só a você.</strong></p>
+
+  <h2>9. Contato</h2>
+  <p>Para dúvidas sobre privacidade, contate-nos em <a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a>, ou visite nossa página de suporte.</p>
+
+</div>
+
+<!-- ===================== Italiano ===================== -->
+<div class="lang-block" data-lang="it" hidden>
+  <h1 class="doc__title">Informativa sulla privacy</h1>
+  <p class="doc__meta">Data di efficacia: 1 novembre 2026</p>
+
+  <p>La presente informativa sulla privacy spiega come PriPassword (nel presente documento denominata «l'App» o «noi») raccoglie, utilizza, conserva e protegge le tue informazioni. PriPassword è un gestore di password di tipo local-first: il tuo caveau di password risiede esclusivamente sui tuoi dispositivi ed è protetto da una crittografia robusta. Non lascia mai il tuo dispositivo e non viene mai caricato su alcun server o cloud. L'App non trasmette le tue password o i dati del caveau a nessun servizio esterno; l'unica comunicazione in uscita riguarda Apple per acquisti/abbonamenti e per il marcatore di eleggibilità (legato al tuo account Apple), e nessuna di queste comunicazioni contiene i dati del tuo caveau.</p>
+
+  <h2>1. Raccogliamo dati personali da te?</h2>
+  <p>Trattiamo il minor numero possibile di dati personali. In effetti, i dati del caveau dell'App non vengono mai trasmessi né archiviati su un server — restano esclusivamente sul tuo dispositivo; il tuo stato di acquisto ed eleggibilità è gestito da Apple sotto il tuo account Apple (e non contiene dati del caveau), e noi non raccogliamo nessuno dei due. La seguente tabella mostra come trattiamo i dati associati a te:</p>
+  <table>
+    <thead>
+      <tr><th>Tipo di dato</th><th>Descrizione</th><th>Raccolti/conservati da noi?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Dati del caveau (password, note, chiavi 2FA, ecc.)</td><td>Memorizzati solo localmente sul tuo dispositivo e sotto il tuo controllo</td><td>No — solo sul tuo dispositivo; non possiamo leggerli né caricarli</td></tr>
+      <tr><td>Marcatore di eleggibilità (legato al tuo account Apple)</td><td>Utilizzato all'interno dell'App per gestire centralmente la tua «prima sincronizzazione gratuita»; non contiene password né informazioni sull'account e identifica solo questo stato di eleggibilità</td><td>No — sincronizzato da Apple tra i tuoi dispositivi</td></tr>
+      <tr><td>Registrazioni di acquisti e abbonamenti in-app</td><td>Gestite da Apple; riceviamo solo il risultato se il pagamento/l'abbonamento è attivo</td><td>No — riceviamo solo il risultato e non otteniamo mai i tuoi dati di pagamento</td></tr>
+    </tbody>
+  </table>
+  <p>Non accediamo mai nemmeno a informazioni sensibili come contatti, foto o posizione, né integriamo SDK di terze parti per analisi, annunci o crash reporting, né carichiamo dati di diagnostica o di utilizzo (inclusi i log di crash). I framework di sistema utilizzati dall'App (ad es. per le notifiche locali) vengono elaborati interamente sul dispositivo. Il feedback via email è redatto da te e inviato tramite il tuo account email; l'App non legge nulla da esso e non carica i dati del tuo caveau.</p>
+
+  <h2>2. Come utilizziamo queste informazioni</h2>
+  <ul>
+    <li>I dati del tuo caveau sul tuo dispositivo <strong>cifrare, archiviare e visualizzare localmente</strong>;</li>
+    <li>sincronizzare i dati tra i tuoi dispositivi <strong>tramite trasferimento diretto da dispositivo a dispositivo</strong>, solo quando <strong>tu li avvii</strong> (scopo e permessi nella sezione 3);</li>
+    <li><strong>completare acquisti e abbonamenti tramite Apple</strong> e fornirti le funzioni acquistate.</li>
+  </ul>
+
+  <h2>3. Permessi, condivisione dei dati e terze parti</h2>
+  <p>L'App richiede le seguenti autorizzazioni di sistema, e solo quando una funzione le richiede e per i seguenti scopi chiari:</p>
+  <ul>
+    <li><strong>Bluetooth</strong>: per il trasferimento diretto da dispositivo a dispositivo per sincronizzare i dati. La sincronizzazione è avviata manualmente da te, è attiva solo durante una sessione di sincronizzazione e non c'è alcun processo residente in background né una connessione persistente; le trasmissioni utilizzano crittografia end-to-end con una chiave generata fresca per ogni sincronizzazione e non passano mai per un server di terze parti o il cloud.</li>
+    <li><strong>Fotocamera</strong>: solo per scansionare i codici QR quando aggiungi l'autenticazione a due fattori (TOTP). La fotocamera è attiva solo durante la scansione; non scatta foto e non memorizza nulla nel tuo rullino.</li>
+    <li><strong>Face ID / Touch ID</strong>: per sbloccare l'App e il tuo caveau, supporta anche il codice del dispositivo (verificato dal sistema). L'App si blocca automaticamente quando passa in background o resta inutilizzata, e i dati non possono essere letti a schermo bloccato. La verifica è effettuata dal sistema; l'App non memorizza credenziali di sblocco (biometria e codice del dispositivo sono entrambi gestiti dal sistema).</li>
+  </ul>
+  <p><strong>Non cediamo i tuoi dati personali a terze parti e non effettuiamo tracking cross-app o cross-site.</strong> L'App non integra SDK di terze parti (nessun annuncio, nessuna analisi, nessuna condivisione social e nessun SDK o identificatore di terze parti utilizzato per il tracking). Ad eccezione della comunicazione necessaria con Apple (acquisti/abbonamenti in-app tramite Apple nonché il marcatore di eleggibilità legato al tuo account Apple), l'App non scambia dati con alcun servizio di terze parti.</p>
+
+  <h2>4. Sicurezza dei dati</h2>
+  <ul>
+    <li>Tutti i dati del caveau sono memorizzati localmente sul tuo dispositivo con <strong>crittografia robusta</strong>;</li>
+    <li>La chiave utilizzata per lo sblocco è protetta dall'hardware di sicurezza del dispositivo e conservata solo sul tuo dispositivo; non lascia mai il tuo dispositivo;</li>
+    <li>I file di dati sono esplicitamente contrassegnati come <strong>esclusi dai backup di iCloud o iTunes</strong>;</li>
+    <li>Dopo aver copiato una password, gli appunti vengono <strong>svuotati automaticamente dopo circa 60 secondi</strong>;</li>
+    <li>L'esportazione dei tuoi dati in un file CSV in chiaro (che contiene le chiavi 2FA) richiede una <strong>conferma biometrica</strong> — un file in chiaro è leggibile da chiunque, conservalo quindi in sicurezza ed eliminalo quando hai finito;</li>
+    <li>Poiché i tuoi dati non lasciano mai il tuo dispositivo, disinstallare l'App o l'eliminazione completa all'interno dell'App è definitiva; non conserviamo alcuna copia.</li>
+  </ul>
+
+  <h2>5. Conservazione dei dati</h2>
+  <p>I tuoi dati del caveau sul dispositivo vengono conservati finché non li elimini all'interno dell'App o disinstalli l'App. Non conserviamo dati del caveau su alcun server. Il marcatore di eleggibilità associato al tuo abbonamento o alla tua prova serve solo a registrare se questo account Apple ha già utilizzato la sua «prima sincronizzazione gratuita», non contiene dati del caveau ed è archiviato con questo account Apple. Le registrazioni di acquisto sono conservate da Apple secondo la sua informativa sulla privacy.</p>
+
+  <h2>6. I tuoi diritti sulla privacy e il controllo dei dati</h2>
+  <p>I tuoi dati del caveau sono memorizzati interamente sul tuo dispositivo e sotto il tuo controllo, così hai il controllo diretto sui tuoi dati: puoi esportare o eliminare in modo permanente l'intero tuo caveau in qualsiasi momento all'interno dell'App, senza doverlo richiedere a noi. Le registrazioni relative ad abbonamenti e acquisti sono gestite da Apple; per gestirle contatta Apple (tramite il tuo account Apple).</p>
+
+  <h2>7. Privacy dei minori</h2>
+  <p>PriPassword è a disposizione di utenti di qualsiasi età, e non raccogliamo consapevolmente informazioni personali di minori di 13 anni. Se ritieni che abbiamo raccolto per errore informazioni di un minore, segnalacelo tramite i contatti qui sotto e le elimineremo il prima possibile.</p>
+
+  <h2>8. Modifiche a questa informativa</h2>
+  <p>Se questa informativa viene aggiornata, la pubblichiamo su questa pagina e ne indichiamo la data di efficacia. Il nostro impegno centrale tuttavia non cambia: <strong>i tuoi dati del caveau ti appartengono, e solo a te.</strong></p>
+
+  <h2>9. Contatti</h2>
+  <p>Per dubbi sulla privacy, contattaci a <a class="link" href="mailto:michaelduanyx@gmail.com">michaelduanyx@gmail.com</a> o visita la nostra pagina di supporto.</p>
+
+</div>
+
+    </div>
+  </div>
+</main>
+
+<script>
+(function(){
+  var LANGS = [
+    { code: 'zh-CN', label: '简体中文', title: '隐私政策' },
+    { code: 'zh-TW', label: '繁體中文', title: '隱私權政策' },
+    { code: 'en',    label: 'English',  title: 'Privacy Policy' },
+    { code: 'ja',    label: '日本語',    title: 'プライバシーポリシー' },
+    { code: 'de',    label: 'Deutsch',  title: 'Datenschutzrichtlinie' },
+    { code: 'fr',    label: 'Français', title: 'Politique de confidentialité' },
+    { code: 'ko',    label: '한국어',    title: '개인정보 처리방침' },
+    { code: 'es',    label: 'Español',  title: 'Política de privacidad' },
+    { code: 'pt',    label: 'Português',title: 'Política de privacidade' },
+    { code: 'it',    label: 'Italiano', title: 'Informativa sulla privacy' }
+  ];
+  var codes = LANGS.map(function(l){ return l.code; });
+  function blocks(){ return document.querySelectorAll('#docBody > .lang-block'); }
+  function apply(lang){
+    var bs = blocks(), found = false, first = null;
+    bs.forEach(function(b){
+      if(!first) first = b;
+      var on = b.getAttribute('data-lang') === lang;
+      b.hidden = !on;
+      if(on) found = true;
+    });
+    if(!found && first){ first.hidden = false; lang = (first.getAttribute('data-lang') || 'zh-CN'); }
+    document.documentElement.lang = lang;
+    try { localStorage.setItem('pp_doc_lang', lang); } catch(e){}
+    var meta = LANGS.filter(function(l){ return l.code === lang; })[0];
+    if(meta) document.title = meta.title + ' — PriPassword';
+  }
+  function init(){
+    var sel = document.getElementById('langSelect');
+    LANGS.forEach(function(l){
+      var op = document.createElement('option');
+      op.value = l.code; op.textContent = l.label;
+      if(sel) sel.appendChild(op);
+    });
+    var saved = null; try { saved = localStorage.getItem('pp_doc_lang'); } catch(e){}
+    var nav = (navigator.language || 'zh-CN').toLowerCase();
+    var params = {}; try { new URLSearchParams(location.search).forEach(function(v,k){ params[k] = v; }); } catch(e){}
+    var initLang = (params.lang && codes.indexOf(params.lang) >= 0) ? params.lang
+                 : (saved && codes.indexOf(saved) >= 0) ? saved
+                 : 'en';
+    if(params.lang){ try { localStorage.setItem('pp_doc_lang', initLang); } catch(e){} }
+    if(sel){
+      sel.value = initLang;
+      sel.addEventListener('change', function(){ apply(sel.value); });
+    }
+    apply(initLang);
+  }
+  if(document.readyState !== 'loading') init(); else document.addEventListener('DOMContentLoaded', init);
+})();
+</script>
+
+</body>
+</html>
