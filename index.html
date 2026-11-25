@@ -52,7 +52,7 @@ section{padding:130px 0}
 .hero h1{margin:14px 0 0}
 .hero .sub{margin:26px auto 0;max-width:620px}
 .hero-cta{margin-top:30px;display:flex;gap:26px;align-items:center;justify-content:center;flex-wrap:wrap}
-.hero-device{margin:66px auto 0;max-width:430px;filter:drop-shadow(0 40px 60px rgba(10,60,140,.20))}
+.hero-video{display:block;margin:66px auto 0;width:100%;height:auto;max-width:860px;border-radius:22px;background:#fff;box-shadow:0 24px 60px -30px rgba(10,60,140,.45)}
 
 /* benefit rows — 苹果产品页单焦点 */
 .benefit{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center}
@@ -110,6 +110,30 @@ section{padding:130px 0}
 .origin{background:#fff;text-align:center;padding:150px 0 110px}
 .origin blockquote{max-width:760px;margin:0 auto;font-size:clamp(19px,2.1vw,25px);line-height:1.5;font-weight:500;letter-spacing:-.015em;text-align:left}
 .origin .sig{margin-top:34px;font-size:15px;color:var(--muted);text-align:left;max-width:760px;margin-left:auto;margin-right:auto}
+
+/* developer */
+.dev-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+.dev-grid h2{margin-top:16px;font-size:clamp(32px,3.4vw,50px);text-wrap:balance}
+.dev-copy p{font-size:18px;line-height:1.6;color:var(--ink);margin-bottom:18px}
+.dev-copy p:first-child{font-weight:500}
+.dev-copy .signoff{margin-top:26px;font-weight:600}
+
+/* build log */
+.log-list{max-width:760px;margin:56px auto 0}
+.log-item{position:relative;padding:0 0 30px 112px}
+.log-item:before{content:"";position:absolute;left:87px;top:5px;width:11px;height:11px;border-radius:50%;background:#c7c7cc}
+.log-item:after{content:"";position:absolute;left:92px;top:21px;bottom:-2px;width:1px;background:#d2d2d7}
+.log-item:last-child{padding-bottom:0}
+.log-item:last-child:after{display:none}
+.log-item.latest:before{background:var(--blue);box-shadow:0 0 0 5px rgba(0,113,227,.13)}
+.log-date{position:absolute;left:0;top:2px;width:66px;text-align:right;font-size:13px;font-weight:500;color:var(--muted)}
+.log-card{background:#fff;border:1px solid #e5e5ea;border-radius:24px;padding:26px 28px;transition:transform .3s,box-shadow .3s}
+.log-card:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(0,0,0,.07)}
+.log-tag{display:inline-block;margin-bottom:12px;font-size:12px;font-weight:600;color:var(--muted)}
+.log-item.latest .log-tag{color:var(--blue)}
+.log-card h3{margin-bottom:9px}
+.log-card p{font-size:16px;line-height:1.5;color:var(--muted)}
+.log-card p+p{margin-top:10px}
 
 /* support band */
 .band{position:relative;overflow:hidden;background:linear-gradient(160deg,#0a84ff 0%,#0066df 48%,#004bb0 100%);color:#fff}
@@ -171,13 +195,21 @@ section{padding:130px 0}
   h1{font-size:clamp(33px,8.5vw,50px);letter-spacing:-.05em}
   h2{font-size:clamp(28px,7.2vw,40px)}
   .sub{font-size:17px;line-height:1.5}
-  .hero-device{margin-top:48px;max-width:340px}
+  .hero-video{margin-top:48px;max-width:100%;border-radius:16px}
   .hero-cta{flex-direction:column;gap:18px}
   .tiles,.reqs,.band-cards{grid-template-columns:1fr;gap:14px}
   .tile{padding:26px 24px 30px}.tile .ico{margin-bottom:18px}
   .req{padding:28px 22px}
   .origin{padding:96px 0 80px}
   .origin blockquote{font-size:clamp(21px,5.4vw,26px)}
+  .dev-grid{grid-template-columns:1fr;gap:28px}
+  .dev-copy p{font-size:17px}
+  .log-list{margin-top:42px}
+  .log-item{padding-left:30px;padding-bottom:24px}
+  .log-date{position:static;width:auto;text-align:left;display:block;margin-bottom:10px}
+  .log-item:before{left:3px;top:4px}
+  .log-item:after{left:8px;top:20px}
+  .log-card{padding:22px 22px 24px;border-radius:20px}
   .cta{padding:92px 0}
 }
 @media(max-width:480px){
@@ -200,6 +232,7 @@ section{padding:130px 0}
       <a href="#cloud">No Cloud Vault</a>
       <a href="#sync">Sync</a>
       <a href="#essentials">Features</a>
+      <a href="#updates">Updates</a>
       <a href="#support">Support</a>
     </div>
     <a href="https://apps.apple.com/app/pripassword-password-manager/id6799293664" target="_blank" rel="noopener">Download ↗</a>
@@ -215,7 +248,9 @@ section{padding:130px 0}
       <a class="btn btn-blue" href="https://apps.apple.com/app/pripassword-password-manager/id6799293664" target="_blank" rel="noopener">Download on the App Store</a>
       <a class="btn-link" href="#privacy">Learn more ›</a>
     </div>
-    <img class="hero-device reveal" src="assets/device-list.png" alt="PriPassword vault, synced with another device">
+    <video class="hero-video reveal" width="2042" height="958" autoplay muted loop playsinline disablepictureinpicture preload="metadata" poster="assets/hero-poster.png" aria-label="PriPassword syncs directly between your devices">
+      <source src="assets/hero-promo.mp4" type="video/mp4">
+    </video>
   </div>
 </header>
 
@@ -357,6 +392,55 @@ section{padding:130px 0}
   </div>
 </section>
 
+<!-- 开发者：用真实背景与亲自使用的事实建立信任 -->
+<section id="developer" class="soft">
+  <div class="wrap-wide dev-grid">
+    <div class="reveal">
+      <div class="eyebrow">Meet the Developer</div>
+      <h2>Built by an Engineer,<br>Driven by a Personal Need.</h2>
+    </div>
+    <div class="dev-copy reveal">
+      <p>I'm Michael Duan, an independent developer with over 10 years of experience in software engineering, primarily focused on IoT products and connected devices.</p>
+      <p>Throughout my career, I've worked across different areas of software development, including mobile applications, device communication, and connected systems. I also hold a master's degree.</p>
+      <p>PriPassword grew out of a personal need. I wanted a practical way to manage and synchronize passwords across my own devices without relying on a cloud-hosted vault.</p>
+      <p>Rather than settling for an existing solution, I decided to build one that reflected how I wanted my own data to be managed.</p>
+      <p>I'm continuing to develop PriPassword independently, improving the product and sharing the thinking behind its evolution.</p>
+      <p class="signoff">PriPassword is a product I build, maintain, and use myself.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 产品进展：只记录用户可感知的变化，自然呈现迭代过程 -->
+<section id="updates">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto">
+      <div class="eyebrow">Building PriPassword</div>
+      <h2 style="margin:16px 0 18px">The story so far.</h2>
+      <p class="sub">A simple record of key updates since launch.</p>
+    </div>
+    <div class="log-list">
+      <article class="log-item latest reveal">
+        <time class="log-date" datetime="2026-11-25">Nov 25, 2026</time>
+        <div class="log-card">
+          <span class="log-tag">New</span>
+          <h3>See your password count.</h3>
+          <p>I've added a password count to your vault, so you can see how many passwords you have at a glance. I've also been working on smaller bug fixes and usability improvements to make PriPassword more polished and reliable.</p>
+        </div>
+      </article>
+      <article class="log-item reveal">
+        <time class="log-date" datetime="2026-11-10">Nov 10, 2026</time>
+        <div class="log-card">
+          <span class="log-tag">Launch</span>
+          <h3>PriPassword is here.</h3>
+          <p>PriPassword is now available on the App Store.</p>
+          <p>This first release includes local password storage, direct device-to-device sync, biometric unlock, password generation, TOTP authentication, and CSV export.</p>
+          <p>This is just the beginning. I'll continue improving PriPassword and making it better with every update.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- 支撑：数据可控 + 支持可达 -->
 <section class="band" id="support">
   <div class="wrap-wide">
@@ -424,6 +508,8 @@ section{padding:130px 0}
         <li><a href="#cloud">No Cloud Vault</a></li>
         <li><a href="#sync">Sync</a></li>
         <li><a href="#essentials">Features</a></li>
+        <li><a href="#developer">Developer</a></li>
+        <li><a href="#updates">Updates</a></li>
       </ul></div>
       <div><h4>Legal</h4><ul>
         <li><a href="https://michael-duany.github.io/PriPassword/privacy.html" target="_blank" rel="noopener">Privacy Policy</a></li>
